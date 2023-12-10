@@ -1,14 +1,13 @@
 
-import './App.css';
-import Weather from "./Weather";
+import React from "react";
+import WeatherSearch from ".WeatherSearch";
+import "./index.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <Weather city="Paris" />
-      </header>
+      <h1>Weather Search Engine</h1>
+      <WeatherSearch />
     </div>
   );
 }
