@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function WeatherSearch() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState("Boston");
   let [temperature, setTemperature] = useState("");
   let [message, setMessage] = useState("");
 
@@ -19,7 +19,8 @@ export default function WeatherSearch() {
     setTemperature(response.data.main.temp);
   }
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1a2b7258ebd456c01aef9175dfe8b709&units=imperial`;
+  let apiKey = "7059cb165caa3316bff682d263a01b1e";
+ let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(url).then(showTemperature);
 
   return (
