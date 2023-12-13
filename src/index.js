@@ -14,7 +14,7 @@ root.render(
         <WeatherSearch />
       </header>
       <small>
-        <a href="https://github.com/maureentullos/weather-react-app.git" target="_blank">Open-sourced code</a> by Maureen Tullos
+        <a href="https://github.com/maureentullos/weather-react-app.git">Open-sourced code</a> by Maureen Tullos
       </small>
     </div>
   </React.StrictMode>
