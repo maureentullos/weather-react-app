@@ -9,9 +9,13 @@ root.render(
   <React.StrictMode>
     <div className="App">
       <header className="App-header">
-        <h1>Hello World</h1>
-        <WeatherSearch city="Paris" />
+        <h1>Weather Search</h1>
+
+        <WeatherSearch />
       </header>
+      <small>
+        <a href="https://github.com/maureentullos/weather-react-app.git" target="_blank">Open-sourced code</a> by Maureen Tullos
+      </small>
     </div>
   </React.StrictMode>
 );
